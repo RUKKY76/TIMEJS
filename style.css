@@ -34,9 +34,12 @@ body {
   padding-bottom: 5rem;
   color: hsl(237, 18%, 59%);
   text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
   
 }
-  
+
+
 .number {
   position: relative;
    /* background-color: hsl(236, 21%, 26%); */
