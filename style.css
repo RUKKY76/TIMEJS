@@ -15,7 +15,8 @@ body {
   color: white;
   text-transform: uppercase;
   letter-spacing: 12px;
-  
+  /* font-size: 2rem; */
+  font-family: "Red Hat Text", sans-serif;
 }
 
 .the-numbers {
@@ -26,18 +27,23 @@ body {
   /* background-color: hsl(235, 16%, 14%); */
 }
 
-.span-container {
-  justify-content: center;
+.all-num-dates{
   display: flex;
-  gap:8rem;
-  /* margin-bottom: 5rem; */
-  padding-bottom: 5rem;
-  color: hsl(237, 18%, 59%);
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  text-align: center;
-  
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+    /* color: hsl(237, 18%, 59%); */
 }
+
+.time{
+  color: hsl(237, 18%, 59%);
+  margin: 1rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+/*  */
 
 
 .number {
@@ -123,10 +129,53 @@ body {
   height: 1px;
 }
 
+.image-container1{
+  width: 100%;
+}
+
 .image-container{
  display: flex;
 justify-content: center;
 gap: 3rem;
-margin-top: -5rem;
+margin-top: -8rem;
+cursor: pointer;
+}
+
+.image-container img:hover {
+  background-color: hsl(345, 95%, 68%);
+  cursor: pointer;
+}
+
+@media screen and (max-width:375) {
+  
+  body {
+    background-image: url(/launch-countdown-timer-main/images/bg-stars.svg);
+    background-color: hsl(234, 17%, 12%);
+  }
+
+  .number{
+    font-size: 24px;
+  }
+
+  .text-container{
+      margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+  }
+
+  .the-numbers{
+    padding: 1rem;
+    font-size: 1.5rem; 
+ 
+  }
+
+  .time{
+    font-size: 24px;
+  }
+
+  .image-container {
+    width: 100%;
+  }
 }
 
